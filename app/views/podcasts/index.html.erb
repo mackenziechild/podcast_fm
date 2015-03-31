@@ -8,7 +8,7 @@
 			<% @podcasts.each do |podcast| %>
 				<%= link_to podcast do %>
 					<li>
-						<img src="images/narwhals.jpg" alt="Narwhals Podcast">
+						<%= image_tag podcast.thumbnail.url(:medium) %>
 						<div class="podcast_overview">
 							<h2><%= podcast.title %></h2>
 							<p class="episode_count">1 Episode</p>
