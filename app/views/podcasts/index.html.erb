@@ -4,7 +4,7 @@
 
 <div id="podcasts" class="cf">
 	<div class="wrapper">
-		<ul>
+		<ul class="cf">
 			<% @podcasts.each do |podcast| %>
 				<%= link_to podcast do %>
 					<li>
@@ -17,5 +17,7 @@
 				<% end %>
 			<% end %>
 		</ul>
+
+		<%= will_paginate @podcasts, previous_label: "Previous", next_label: "Next" %>
 	</div>
 </div>
