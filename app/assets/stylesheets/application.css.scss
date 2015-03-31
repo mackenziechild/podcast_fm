@@ -1,0 +1,190 @@
+$white: #FFFFFF;
+$highlight: #d2674e;
+$dark: #22292e;
+$light: #EDEFF5;
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper_wide {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.wrapper_skinny {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.cf:before, .cf:after {
+	content: " ";
+	display: table;
+}
+
+.cf:after {
+	clear: both;
+}
+
+.button {
+	color: $white;
+	text-decoration: none;
+	font-size: 1rem;
+	padding: 1rem 2rem;
+	border-radius: 2rem;
+	outline: none;
+	border: none;
+  display: inline-block;
+  min-width: 8.5rem;
+}
+
+.button_highlight {
+	background: $highlight;
+	transition: background .4s ease-in-out;
+	&:hover {
+		background: darken($highlight, 7.5%);
+	}
+}
+
+.button_white {
+	background: $white;
+	color: $dark;
+	transition: background .4s ease-in-out;
+	&:hover {
+		background: darken($white, 7.5%);
+	}
+}
+
+.button_block {
+	display: block;
+	margin: 0 auto;
+}
+
+#main_header {
+	color: $dark;
+	background: $white;
+	padding: 2.5rem 0;
+	#logo {
+		float: left;
+		text-transform: uppercase;
+		font-weight: 700;
+		color: $dark;
+		text-decoration: none;
+	}
+	nav {
+		float: right;
+		ul {
+			list-style: none;
+			margin: 0;
+			li {
+				display: inline;
+				margin-left: 2.5rem;
+				a {
+					color: $dark;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+#banner {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	margin-bottom: 4rem;
+	h1 {
+		text-align: center;
+		color: $white;
+		font-size: 3rem;
+		font-weight: 300;
+		letter-spacing: 1px;
+		margin: 0;
+		padding: 8rem 0;
+	}
+}
+
+.podcasts_banner {
+	background-image: url(../images/podcasts_banner.jpg);
+}
+
+.sign_in_banner {
+	background-image: url(../images/sign_in_banner.jpg);
+}
+
+.sign_up_banner {
+	background-image: url(../images/sign_up_banner.jpg);
+}
+
+.pagination:before, .pagination:after {
+	content: " ";
+	display: table;
+}
+
+.pagination:after {
+	clear: both;
+}
+
+.pagination {
+	text-align: center;
+	margin: 1rem 0 5rem 0;
+	a, .previous_page, .current, .next_page {
+		padding: 0.75rem 1rem;
+		margin: 0 .25rem;
+		border-radius: .15rem;
+		line-height: 1.25;
+		text-decoration: none;
+		background: #EDEFF5;
+		font-weight: 700;
+		font-size: .7rem;
+		font-style: normal;
+		color: $dark;
+		&:hover {
+			background: $highlight;
+			color: $white;
+		}
+	}
+	.current {
+		background: $highlight;
+		color: $white;
+	}
+	.disabled {
+		color: #C0C0C0;
+		&:hover {
+			color: #C0C0C0;
+			background: #EDEFF5;
+		}
+	}
+}
+
+.field {
+	margin: .5rem 0 1.5rem 0;
+}
+
+input[type="email"], input[type="text"], input[type="password"], textarea {
+	width: 100%;
+	height: 2.5rem;
+	padding: .25rem 1rem;
+	background: $light;
+	border: 1px solid darken($light, 5%);
+	border-radius: .35rem;
+	margin-top: .5rem;
+}
+
+textarea {
+	min-height: 8rem;
+	margin-top: .5rem !important;
+}
+
+#form {
+	padding: 0 0 5rem 0;
+}
+
+@import 'normalize';
+@import 'welcome';
+// @import 'podcasts';
