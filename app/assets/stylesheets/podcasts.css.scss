@@ -159,6 +159,111 @@
 			line-height: 1.7;
 			color: lighten($dark, 25%);
 		}
+		a {
+			text-decoration: none;
+		}
+		.jp-jplayer,.jp-audio {
+    width: 70%;
+    margin: 3rem auto .5rem auto;
+		}
+		.jp-title {
+	    font-size: 12px;
+	    text-align: center;
+	    color: #999;
+		}
+		.jp-title ul {
+	    padding: 0;
+	    margin: 0;
+	    list-style: none;
+		}
+		.jp-gui {
+	    position: relative;
+	    background: $highlight;
+	    transition: background .4s ease-in-out;
+	    border-radius: 3px;
+	    overflow: hidden;
+	    margin-top: 10px;
+		}
+		.jp-controls {
+	    padding: 0;
+	    margin: 0;
+	    list-style: none;
+	    font-family: "FontAwesome";
+		}
+
+		.jp-controls li {
+	    display: inline;
+		}
+
+		.jp-controls a {
+	    color: #fff;
+		}
+		.jp-play,.jp-pause {
+	    width: 60px;
+	    height: 40px;
+	    display: inline-block;
+	    text-align: center;
+	    line-height: 43px;
+	    border-right: 1px solid lighten($highlight, 10%);
+		}
+
+		.jp-controls .jp-play:hover,.jp-controls .jp-pause:hover {
+	    background-color: darken($highlight, 10%);
+		}
+
+		.jp-mute,.jp-unmute {
+	    position: absolute;
+	    right: 59px;
+	    top: -3px;
+	    width: 20px;
+	    height: 40px;
+	    display: inline-block;
+	    line-height: 46px;
+		}
+
+		.jp-mute {
+	    text-align: left;
+		}
+		.jp-time-holder {
+	    color: #FFF;
+	    font-size: 12px;
+	    line-height: 14px;
+	    position: absolute;
+	    right: 90px;
+	    top: 14px;
+		}
+		.jp-progress {
+	    background-color: darken($highlight, 25%);
+	    border-radius: 20px 20px 20px 20px;
+	    overflow: hidden;
+	    position: absolute;
+	    right: 22%;
+	    top: 15px;
+	    width: 65%;
+		}
+
+		.jp-play-bar {
+	    height: 12px;
+	    background-color: #fff;
+	    border-radius: 20px 20px 20px 20px;
+		}
+
+		.jp-volume-bar {
+	    position: absolute;
+	    right: 10px;
+	    top: 17px;
+	    width: 45px;
+	    height: 8px;
+	    border-radius: 20px 20px 20px 20px;
+	    background-color: darken($highlight, 25%);
+	    overflow: hidden;
+		}
+
+		.jp-volume-bar-value {
+	    background-color: #fff;
+	    height: 8px;
+	    border-radius: 20px 20px 20px 20px;
+		}
 	}
 	#links {
 		padding: 2rem 0;
