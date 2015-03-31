@@ -19,8 +19,18 @@
 		<%= link_to podcasts_path do %>
 			All Podcasts
 			<span>/</span>
-			The Rocketship Podcast
+			<%= link_to @podcast.title, podcast_path(@podcast) %>
+			<span>/</span>
+			<%= @episode.title %>
 		<% end %>
+	</div>
+
+	<div id="episode_content">
+		<div class="wrapper_skinny">
+			<img src="images/pieter_levels.png" alt="Pieter Levels" class="current_episode_thumbnail">
+			<h2><%= @episode.title %></h2>
+			<p class="description"><%= @episode.description %></p>
+		</div>
 	</div>
 
 	<div id="episodes">
@@ -29,7 +39,7 @@
 				<% @episodes.each do |episode| %>
 					<li class="cf">
 						<div class="episode_thumbnail">
-							<a href="#">
+							<a href="episode.html">
 								<img src="images/pieter_levels.png" alt="Pieter Levels">
 							</a>
 						</div>
